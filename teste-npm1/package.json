@@ -1,18 +1,16 @@
 {
-  "name": "curso-ctt-instalando-npm",
+  "name": "campinas-tech-talents",
   "version": "1.0.0",
-  "description": "Aprendendo a instalar o npm",
+  "description": "Aprendendo a instalar o gerenciador de pacotes",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "inicio": "echo \"Vai rodar meu script\" && nodemon index.js"
+    "dev": "nodemon index.js"
   },
   "keywords": [
-    "curso",
-    "node",
-    "conhecimento"
+    "curso"
   ],
-  "author": "Leonardo & Ricardo - Campinas tech talents",
+  "author": "Leonardo & Ricardo",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",

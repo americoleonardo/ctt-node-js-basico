@@ -1,22 +1,24 @@
-Iniciar o projeto
+## Iniciar o projeto
 
 ```
 npm init
 ```
 
-Criar index.js e console.log("Hello world");
+## Criar index.js e console.log("Hello world");
+
+## Rodar o projeto em node
 
 ```
 node index.js
 ```
 
-Instalar o nodemon
+## Instalar o nodemon
 
 ```
 npm install -g nodemon
 ```
 
-Adicionar no package.json
+## Adicionar no package.json
 
 ```
 "scripts": {
@@ -27,4 +29,16 @@ Adicionar no package.json
 
 ```
 npm run dev
+```
+
+## Saída esperada
+
+```
+[nodemon] 2.0.7
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node index.js`
+Hello World
+[nodemon] clean exit - waiting for changes before restart
 ```
