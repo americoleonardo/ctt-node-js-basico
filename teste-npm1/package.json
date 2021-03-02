@@ -1,0 +1,21 @@
+{
+  "name": "curso-ctt-instalando-npm",
+  "version": "1.0.0",
+  "description": "Aprendendo a instalar o npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "inicio": "echo \"Vai rodar meu script\" && nodemon index.js"
+  },
+  "keywords": [
+    "curso",
+    "node",
+    "conhecimento"
+  ],
+  "author": "Leonardo & Ricardo - Campinas tech talents",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
