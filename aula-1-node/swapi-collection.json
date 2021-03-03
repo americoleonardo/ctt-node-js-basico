@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "65ae6d0c-1ced-4495-9ff6-e72c5ef450c4",
+		"name": "swapi-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "pessoas",
+			"item": [
+				{
+					"name": "Pessoa 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{swapi}}/people/10",
+							"host": [
+								"{{swapi}}"
+							],
+							"path": [
+								"people",
+								"10"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pessoa 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{swapi}}/people/12",
+							"host": [
+								"{{swapi}}"
+							],
+							"path": [
+								"people",
+								"12"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pessoa 3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{swapi}}/people/20",
+							"host": [
+								"{{swapi}}"
+							],
+							"path": [
+								"people",
+								"20"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "naves",
+			"item": [
+				{
+					"name": "Nave 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{swapi}}/starships/9/",
+							"host": [
+								"{{swapi}}"
+							],
+							"path": [
+								"starships",
+								"9",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Nave 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{swapi}}/starships/10/",
+							"host": [
+								"{{swapi}}"
+							],
+							"path": [
+								"starships",
+								"10",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Nave 3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{swapi}}/starships/11/",
+							"host": [
+								"{{swapi}}"
+							],
+							"path": [
+								"starships",
+								"11",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "planetas",
+			"item": [
+				{
+					"name": "Planeta 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{swapi}}/planets/1/",
+							"host": [
+								"{{swapi}}"
+							],
+							"path": [
+								"planets",
+								"1",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Planeta 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{swapi}}/planets/3/",
+							"host": [
+								"{{swapi}}"
+							],
+							"path": [
+								"planets",
+								"3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Planeta 3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{swapi}}/planets/20/",
+							"host": [
+								"{{swapi}}"
+							],
+							"path": [
+								"planets",
+								"20",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "swapi",
+			"value": "https://swapi.dev/api"
+		}
+	]
+}
