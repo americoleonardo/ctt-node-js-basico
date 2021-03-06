@@ -1,23 +1,23 @@
-console.log("Relembrando funções");
+console.log("Exercício de arrow functions");
 
 /*
 * 1) Criar uma função que permita listar um veículo qualquer
 * 2) Criar uma função que permita listar a placa de um veículo passando um ID
 */
-function listarVeiculo(callback) {
+const listarVeiculo = (callback) => {
     console.log("Chamando a função listarVeiculo");
-    setTimeout(function () {
+    setTimeout(() => {
         return callback(null, {
             id: 1,
             nome: "Gol"
         });
     }, 3000)
-}
+};
 
-function listarPlaca(id, callback) {
+const listarPlaca = (id, callback) => {
     console.log("Chamando a função listarPlaca");
     let tempo = 4000;
-    setTimeout(function () {
+    setTimeout(() => {
         return callback(null, {
             id: id,
             nome: `Gol - placa do carro`,
@@ -26,8 +26,8 @@ function listarPlaca(id, callback) {
     }, tempo);
 }
 
-listarVeiculo(function resolverVeiculo(erro, veiculo) {
-    listarPlaca(veiculo.id, function resolverPlaca(erroPlaca, placa) {
+listarVeiculo((erro, veiculo) => {
+    listarPlaca(veiculo.id, (erroPlaca, placa) => {
         console.log(veiculo);
         console.log(placa);
     })

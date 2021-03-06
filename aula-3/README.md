@@ -18,6 +18,11 @@
 
 Com base no exercício de solução de callbacks,
 
-8.1) Duplicar o exercício de callback (conteudo-callback.js) que fizemos e renomear esta cópia para: functions-para-arrow.js;
-8.2) Adicionar functions-para-arrow através de require no arquivo index.js;
-8.3) Transformar todas funções para arrow functions com base nos exercícios que fizemos até agora;
+8.1) Duplicar o exercício de callback (conteudo-callback.js) que 
+fizemos e renomear esta cópia para: functions-para-arrow.js;
+
+8.2) Adicionar functions-para-arrow através de require no arquivo 
+index.js;
+
+8.3) Transformar todas funções para arrow functions com base 
+nos exercícios que fizemos até agora;
