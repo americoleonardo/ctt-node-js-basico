@@ -1,7 +1,7 @@
 const dotenv = require('dotenv');
 dotenv.config();
 
-const { SERVICO, PORTA } = process.env;
+const { SERVICO, PORTA, URL_LOGS } = process.env;
 console.log(`[Carregando] serviço ${SERVICO}:${PORTA}`);
 
 const express = require('express')
@@ -12,7 +12,7 @@ const axios = require('axios');
 
 app.use((req, res, next) => {
   const logar = async () => {
-    const { data } = await axios.post("http://localhost:3003/v1/logs", {
+    const { data } = await axios.post(URL_LOGS, {
         servico: req.method,
         evento: req.url,
         data: req.body

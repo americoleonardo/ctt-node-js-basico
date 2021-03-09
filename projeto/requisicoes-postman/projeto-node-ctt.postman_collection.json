@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "a8527a30-9bc9-4db4-930a-b7df01c30f7d",
+		"name": "projeto-node-ctt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "logs",
+			"item": [
+				{
+					"name": "/v1/logs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/v1/logs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"v1",
+								"logs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/logs",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"servico\": \"/logs\",\n    \"evento\": \"GET\",\n    \"data\": {\n        \"carro\": \"Gol\",\n        \"marca\": \"vw\",\n        \"ano\": 2010\n    }\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3003/v1/logs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"v1",
+								"logs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "carros",
+			"item": [
+				{
+					"name": "/v1/carros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/v1/carros/491ffd20-aaae-4bbe-940f-070dec4f039a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"carros",
+								"491ffd20-aaae-4bbe-940f-070dec4f039a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/carros",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n    \"nome\": \"Uno\",\n    \"marca\": \"Fiat\",\n    \"tipo\": \"Hatch\",\n    \"placa\": \"TTT-2S37\",\n    \"cor\": \"Verde\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/carros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"carros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/carros",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n    \"nome\": \"Uno\",\n    \"marca\": \"Fiat\",\n    \"tipo\": \"Hatch\",\n    \"placa\": \"TTT-2S37\",\n    \"cor\": \"Verde\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/carros/19d912c6-f6e3-46b4-9498-d85fff3368d6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"carros",
+								"19d912c6-f6e3-46b4-9498-d85fff3368d6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/v1/carros Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n    \"nome\": \"Uno\",\n    \"marca\": \"Fiat\",\n    \"tipo\": \"Hatch\",\n    \"placa\": \"TTT-2S37\",\n    \"cor\": \"Verde\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/v1/carros/19d912c6-f6e3-46b4-9498-d85fff3368d6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"v1",
+								"carros",
+								"19d912c6-f6e3-46b4-9498-d85fff3368d6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
