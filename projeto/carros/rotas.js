@@ -64,8 +64,6 @@ app.put(`/v1/carros/:id`, (req, res) => {
     } else {
         return res.status(404).json({mensagem: "Ops! não encontramos esse carro!"});
     }
-
-    return res.status(201).json({})
 });
 
 app.post('/v1/carros', function (req, res) {
