@@ -37,6 +37,6 @@ app.post('/v1/logs', function (req, res) {
     };
 
     logs.push(event);
-
+    console.log("Executou o evento de registro.");
     return res.status(201).json(event);
 })
